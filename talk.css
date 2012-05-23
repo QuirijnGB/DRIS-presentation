@@ -5,9 +5,9 @@
 }
 
 #intro h1 {
-	width: 60%;
-	min-height: 500px;
-	margin: 5% auto 0;
+	font-size: 3em;
+	margin: 10% auto 0;
+	text-align: center;
 }
 
 #intro .attribution {
