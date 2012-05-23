@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+<title>CSSS: A brief introduction</title>
+<link href="slideshow.css" rel="stylesheet" />
+<link href="theme.css" rel="stylesheet" />
+<link href="talk.css" rel="stylesheet" />
+<script src="prefixfree.min.js"></script>
+</head>
+<body data-duration="10">
+<header id="intro" class="slide">
+  <h1>
+    <object data="logo.svg" width="100%" type="image/svg+xml">
+      <img src="logo.png" alt="CSSS: CSS-based SlideShow System" />
+    </object>
+  </h1>
+  <p class="attribution">By Lea Verou</p>
+</header>
+<section>
+  <header class="slide">
+    <h1>Introduction</h1>
+  </header>
+</section>
+<section>
+  <header class="slide">
+    <h1>Introduction2</h1>
+  </header>
+  <section class="slide">
+    <p>This is some content</p>
+  </section>
+</section>
+<section>
+  <header class="slide">
+    <h1>Introduction3</h1>
+  </header>
+</section>
+<footer class="slide" title="The End">
+  <h2>Thank you!</h2>
+</footer>
+<script src="slideshow.js"></script> 
+<script src="plugins/css-edit.js"></script> 
+<script src="plugins/css-snippets.js"></script> 
+<script src="plugins/css-controls.js"></script> 
+<script src="plugins/code-highlight.js"></script> 
+<script>
+var slideshow = new SlideShow();
+
+var snippets = document.querySelectorAll('.snippet');
+for(var i=0; i<snippets.length; i++) {
+	new CSSSnippet(snippets[i]);
+}
+
+var cssControls = document.querySelectorAll('.css-control');
+for(var i=0; i<cssControls.length; i++) {
+	new CSSControl(cssControls[i]);
+}
+</script>
+</body>
+</html>
