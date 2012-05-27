@@ -15,6 +15,7 @@
   Our internship
   </h1>
   <p class="attribution">By Quirijn Groot Bluemink &amp; Matthias van Wambeke</p>
+  <p class="presenter-notes">These are presenter notes</p>
 </header>
 <!--This is a little intro-->
 <section>
@@ -38,20 +39,23 @@
 <section>
   <header class="slide">
     <h1>How we got here</h1>
+  	<p class="presenter-notes">[Matthias] Talk about how we got here</p>
   </header>
   <header class="slide">
     <h1>About TCHPC</h1>
+  	<p class="presenter-notes">[Matthias] Introducing TCHPC</p>
   </header>
-  </header
 
 <!--Now let's start about the project-->
 <section>
   <header class="slide">
     <h1>Project situation</h1>
+  	<p class="presenter-notes">[Quirijn] The debriefing, what we started with etc</p>
   </header>
   <header class="slide">
     <h1>Goals</h1>
   </header>
+  	<p class="presenter-notes">[Quirijn] What our goals were</p>
 </section>
 
 <!--Have a chat about the front end-->
@@ -85,11 +89,42 @@
 <!--And a little about the back-end API-->
 <section>
   <header class="slide">
-    <h1>The API</h1>
+    <h1>The Back-end</h1>
+  	<p class="presenter-notes">[Quirijn] </p>
   </header>
   <section class="slide">
-  	<h1>Functions</h1>
-    <p>Hey look an API!</p>
+    <h2>The initial idea</h2>
+    <p class="delayed">RESTful interface to Fedora-commons</p>
+    <p class="delayed">Cross domain issues</p>
+    <p class="delayed">PHP proxy</p>
+    <!-- TODO Add some of the problems encountered -->
+  	<p class="presenter-notes">[Quirijn]
+  			Using the rest api of Fedora
+  	</p>
+  </section>
+  <header class="slide">
+    <h1>So we scrapped that.</h1>
+  </header>
+  <section class="slide">
+    <h2>It's actual state</h2>
+    <ul>
+    	<li class="delayed">Node.js</li>
+    	<li class="delayed">MongoDB</li>
+    	<li class="delayed">Javascript</li>
+    	<li class="delayed">Multiple reusable npm packages</li>
+    </ul>
+  	<p class="presenter-notes">[Quirijn]</p>
+  </section>
+  <section class="slide">
+  	<h2>Functions</h2>
+    <ul>
+    	<li>Store objects meta data</li>
+    	<li>Store binary data</li>
+    	<li>Expose all the information</li>
+    	<li>Expose reporting numbers</li>
+    	<li>Pushing items to Fedora-Commons</li>
+    </ul>
+  	<p class="presenter-notes">[Quirijn]</p>
   </section>
 </section>
 <!--Add in a Q/A-->
