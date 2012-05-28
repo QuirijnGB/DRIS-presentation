@@ -34,9 +34,6 @@
 						The Project
 					</li>
 					<li>
-						How we started and what changed
-					</li>
-					<li>
 						The Front-end
 					</li>
 					<li>
@@ -54,7 +51,7 @@
 				<h1>How we got here</h1>
 				<p class="presenter-notes">
 					[Matthias] Quirijn decided to explore the world a bit further and applied for an international placement. After a short selection procedure and an interview, he ended up going to Dublin to work at the Trinity Centre for High Performance Computing (TCHPC).
-Matthias wanted to do something totally new, so he decided to do an international internship and after selection he was matched with Quirijn for an internship at TCHPC.
+					Matthias wanted to do something totally new, so he decided to do an international internship and after selection he was matched with Quirijn for an internship at TCHPC.
 
 				</p>
 			</header>
@@ -76,17 +73,17 @@ Matthias wanted to do something totally new, so he decided to do an internationa
 					<h2>The project</h2>
 					<ul>
 						<li class="delayed">
-							Preservation of historically valuable data
+							A simple web application
 						</li>
 						<li class="delayed">
-							A simple web application
+							Preservation of historically valuable data
 						</li>
 						<li class="delayed">
 							Stored in a repository
 						</li>
 					</ul>
 					<p class="presenter-notes">
-						[Quirijn] General idea; Digitally preserve irish historical data; A web application to import/export the data; All the data store in repo
+						[Quirijn] General idea; A web application to import/export the data; Digitally preserve irish historical data; All the data store in repo
 					</p>
 				</section>
 				<section class="slide">
@@ -101,6 +98,60 @@ Matthias wanted to do something totally new, so he decided to do an internationa
 						[Quirijn] Nothing; Stared off from scratch with little idea on what it was really about; made lots of mistakes, shown later.
 					</p>
 				</header>
+				<section class="slide">
+					<h2>And so we started</h2>
+					<ul>
+						<li class="delayed">
+							A single Node.js application
+						</li>
+						<li class="delayed">
+							Fedora as storage
+						</li>
+					</ul>
+					<p class="presenter-notes">
+						[Quirijn] Used Fedora as backend; 
+					</p>
+				</section>
+				<section class="slide">
+					<h2>But then we realised</h2>
+					<ul>
+						<li class="delayed">
+							The code wasn't very maintainable
+						</li>
+						<li class="delayed">
+							Using Fedora as storage wasn't sensible
+						</li>
+						<li class="delayed">
+							You couldn't easily develop 3rd party applications
+						</li>
+					</ul>
+					<p class="presenter-notes">
+						[Quirijn] 
+					</p>
+				</section>
+				<section class="slide">
+					<h2>So we decided to</h2>
+					<ul>
+						<li class="delayed">
+							Make a clear differenciation between the front- and back-end 
+						</li>
+						<li class="delayed">
+							Create a developer friendly API
+						</li>
+						<li class="delayed">
+							Create a front-end using said API
+						</li>
+						<li class="delayed">
+							Treat Fedora as a blackbox
+						</li>
+						<li class="delayed">
+							Use MongoDB to store and deliver content for the API
+						</li>
+					</ul>
+					<p class="presenter-notes">
+						[Quirijn] 
+					</p>
+				</section>
 			</section>
 			<!--Have a chat about the front end-->
 			<section>
@@ -115,13 +166,18 @@ Matthias wanted to do something totally new, so he decided to do an internationa
 						</li>
 					</ul>
 				</section>
-				</header>
 				<section class="slide">
 					<img src="img/project/hierarchy.png" />
 					<ul>
-						<li>Collection: You could think of a collection as a labelled box; it’s filled with various items and groupings of items that are all ‘children’ ( series and Items)  of that box stored in the warehouse alongside many other boxes.</li>
-						<li>Series: This record would be another basic record presenting a basic overview of a grouping of items located in a box (collection).( few notebooks, a stack of photographs, some letters and/or objects such as a typewriter or pipe)</li>
-						<li>Item: item is anything with a distinct title (book, poster, photograph, manuscript, etc), which may or may not have multiple surrogates connected underneath it. </li>
+						<li>
+							Collection: You could think of a collection as a labelled box; it’s filled with various items and groupings of items that are all ‘children’ ( series and Items)  of that box stored in the warehouse alongside many other boxes.
+						</li>
+						<li>
+							Series: This record would be another basic record presenting a basic overview of a grouping of items located in a box (collection).( few notebooks, a stack of photographs, some letters and/or objects such as a typewriter or pipe)
+						</li>
+						<li>
+							Item: item is anything with a distinct title (book, poster, photograph, manuscript, etc), which may or may not have multiple surrogates connected underneath it.
+						</li>
 					</ul>
 				</section>
 				<section class="slide">
@@ -135,7 +191,7 @@ Matthias wanted to do something totally new, so he decided to do an internationa
 						</li>
 						<li class="delayed">
 							Creation
-						</li >
+						</li>
 						<li class="delayed">
 							Edit
 						</li>
@@ -216,7 +272,8 @@ Matthias wanted to do something totally new, so he decided to do an internationa
 				<section class="slide">
 					<img src="img/project/query.png" />
 				</section>
-					<h1>Browse</h1>
+				<header class="slide">
+				<h1>Browse</h1>
 				</header>
 				<section class="slide">
 					<img src="img/project/browse.png" />
@@ -333,7 +390,7 @@ Matthias wanted to do something totally new, so he decided to do an internationa
 			</section>
 		</section>
 		<!--Might skip tthis-->
-		<section>
+		<!---<section>
 			<section class="slide">
 				<h1>The evolution</h1>
 				<video width="320" height="240" controls="controls">
@@ -344,7 +401,7 @@ Matthias wanted to do something totally new, so he decided to do an internationa
 					[Quirijn] Skip this if there is no time
 				</p>
 			</section>
-		</section>
+		</section>-->
 		<!--Add in a Q/A-->
 		<section>
 			<header class="slide">
