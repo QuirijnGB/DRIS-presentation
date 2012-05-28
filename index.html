@@ -16,7 +16,7 @@
 				By Quirijn Groot Bluemink &amp; Matthias van Wambeke
 			</p>
 			<p class="presenter-notes">
-				These are presenter notes
+				[Quirijn & Matthias] Introduce ourselves
 			</p>
 		</header>
 		<!--This is a little intro-->
@@ -31,30 +31,23 @@
 						About TCHPC
 					</li>
 					<li>
-						Project situation
+						The Project
 					</li>
 					<li>
-						Project goals
+						How we started and what changed
 					</li>
 					<li>
-						How did we start and what changed
+						The Front-end
 					</li>
 					<li>
-						DRIS workflows
-					</li>
-					<li>
-						DRI API
-					</li>
-					<li>
-						Fedora
-					</li>
-					<li>
-						Evolution process
+						The Back-end
 					</li>
 				</ul>
+				<p class="presenter-notes">
+					[Quirijn] Go over the topics
+				</p>
 			</section>
 		</section>
-
 		<!--Introduction-->
 		<section>
 			<header class="slide">
@@ -66,32 +59,54 @@
 			<header class="slide">
 				<h1>About TCHPC</h1>
 				<p class="presenter-notes">
-					[Matthias] Introducing TCHPC
+					[Matthias] Introducing TCHPC, what it does etc
 				</p>
 			</header>
-
 			<!--Now let's start about the project-->
 			<section>
 				<header class="slide">
-					<h1>Project situation</h1>
+					<h1>The project</h1>
 					<p class="presenter-notes">
 						[Quirijn] The debriefing, what we started with etc
 					</p>
 				</header>
+				<section class="slide">
+					<h2>The project</h2>
+					<ul>
+						<li class="delayed">
+							Preservation of historically valuable data
+						</li>
+						<li class="delayed">
+							A simple web application
+						</li>
+						<li class="delayed">
+							Stored in a repository
+						</li>
+					</ul>
+					<p class="presenter-notes">
+						[Quirijn] General idea; Digitally preserve irish historical data; A web application to import/export the data; All the data store in repo
+					</p>
+				</section>
+				<section class="slide">
+					<h2>What we had to start with</h2>
+					<p class="presenter-notes">
+						[Quirijn] *Awkward silence*
+					</p>
+				</section>
 				<header class="slide">
-					<h1>Goals</h1>
+					<h1 class="delayed">Nothing</h1>
+					<p class="presenter-notes">
+						[Quirijn] Nothing; Stared off from scratch with little idea on what it was really about; made lots of mistakes, shown later.
+					</p>
 				</header>
-				<p class="presenter-notes">
-					[Quirijn] What our goals were
-				</p>
 			</section>
-
 			<!--Have a chat about the front end-->
 			<section>
 				<header class="slide">
-					<h1>DRIS workflows</h1>
+					<h1>The front-end</h1>
 				</header>
 				<section class="slide">
+					<h2>DRIS workflows</h2>
 					<ul>
 						<li>
 							About
@@ -111,160 +126,159 @@
 					</ul>
 				</section>
 				<section class="slide">
-					<h1>Reporting</h1>
+					<h2>Reporting</h2>
 				</section>
 				<section class="slide">
-					<h1>Creation</h1>
+					<h2>Creation</h2>
 				</section>
 				<section class="slide">
-					<h1>Edit</h1>
+					<h2>Edit</h2>
 				</section>
 				<section class="slide">
-					<h1>Administering</h1>
+					<h2>Administering</h2>
 				</section>
 			</section>
+		</section>
 
-			<!--And a little about the back-end API-->
-			<section>
-				<header class="slide">
-					<h1>The Back-end</h1>
-					<p class="presenter-notes">
-						[Quirijn]
-					</p>
-				</header>
-				<section class="slide">
-					<h2>The initial idea</h2>
+		<!--And a little about the back-end API-->
+		<section>
+			<header class="slide">
+				<h1>The Back-end</h1>
+				<p class="presenter-notes">
+					[Quirijn] Talk about what you did with the back-end
+				</p>
+			</header>
+			<section class="slide">
+				<h2>The initial idea</h2>
+				<ul>
+					<li class="delayed">
+						RESTful interface to Fedora-commons
+					</li>
+					<li class="delayed">
+						Cross domain issues
+					</li>
+					<li class="delayed">
+						PHP proxy
+					</li>
+					<li class="delayed">
+						Not such a good idea
+					</li>
 					<ul>
 						<li class="delayed">
-							RESTful interface to Fedora-commons
+							Wasn't very restful
 						</li>
 						<li class="delayed">
-							Cross domain issues
-						</li>
-						<li class="delayed">
-							PHP proxy
-						</li>
-						<li class="delayed">
-							Not such a good idea
-						</li>
-						<ul>
-							<li class="delayed">
-								Wasn't very restful
-							</li>
-							<li class="delayed">
-								Ugly
-							</li>
-						</ul>
-					</ul>
-					<!-- TODO Add some of the problems encountered -->
-					<p class="presenter-notes">
-						[Quirijn]
-						Using the rest api of Fedora
-					</p>
-				</section>
-				<header class="slide">
-					<h1>So we scrapped that.</h1>
-				</header>
-				<section class="slide">
-					<h2>API 2.0</h2>
-					<ul>
-						<li class="delayed">
-							Node.js
-						</li>
-						<li class="delayed">
-							MongoDB
-						</li>
-						<li class="delayed">
-							Javascript
-						</li>
-						<li class="delayed">
-							Multiple reusable npm packages
+							Ugly
 						</li>
 					</ul>
-					<p class="presenter-notes">
-						[Quirijn]
-					</p>
-				</section>
-				<section class="slide">
-					<h2>Structure</h2>
-					<ul>
-						<li class="delayed">
-							Multiple reusable npm packages
-						</li>
-					</ul>
-					<p class="presenter-notes">
-						[Quirijn]
-					</p>
-				</section>
-				<section class="slide">
-					<h2>Functions</h2>
-					<ul>
-						<li>
-							Store objects meta data
-						</li>
-						<li>
-							Store binary data
-						</li>
-						<li>
-							Expose all the information
-						</li>
-						<li>
-							Expose reporting numbers
-						</li>
-						<li>
-							Pushing items to Fedora-Commons
-						</li>
-					</ul>
-					<p class="presenter-notes">
-						[Quirijn]
-					</p>
-				</section>
+				</ul>
+				<!-- TODO Add some of the problems encountered -->
+				<p class="presenter-notes">
+					[Quirijn]
+					Using the rest api of Fedora; cross domain issues, php proxy
+				</p>
 			</section>
-			<!--Add in a Q/A-->
-			<section>
-				<header class="slide">
-					<h1>The evolution</h1>
-				</header>
-				<section class="slide">
-					<h1>The evolution</h1>
-					<img class="center" src="http://www.webdesignideas.org/wp-content/uploads/2010/11/video-play-button-layer.jpg" />
-				</section>
+			<header class="slide">
+				<h1>So we scrapped that.</h1>
+			</header>
+			<section class="slide">
+				<h2>API 2.0</h2>
+				<ul>
+					<li class="delayed">
+						Node.js
+					</li>
+					<li class="delayed">
+						MongoDB
+					</li>
+					<li class="delayed">
+						Javascript
+					</li>
+				</ul>
+				<p class="presenter-notes">
+					[Quirijn] Started from scratch;
+				</p>
 			</section>
-			<!--Add in a Q/A-->
-			<section>
-				<header class="slide">
-					<h1>Questions or remarks?</h1>
-				</header>
+			<section class="slide">
+				<h2>Structure</h2>
+				<ul>
+					<li class="delayed">
+						Multiple reusable npm packages
+					</li>
+				</ul>
+				<p class="presenter-notes">
+					[Quirijn]
+				</p>
 			</section>
-			<!--I think it would be nice to that every one-->
+			<section class="slide">
+				<h2>Functions</h2>
+				<ul>
+					<li>
+						Store objects meta data
+					</li>
+					<li>
+						Store binary data
+					</li>
+					<li>
+						Expose all the information
+					</li>
+					<li>
+						Expose reporting numbers
+					</li>
+					<li>
+						Pushing items to Fedora-Commons
+					</li>
+				</ul>
+				<p class="presenter-notes">
+					[Quirijn]
+				</p>
+			</section>
+		</section>
+		<!--Might skip tthis-->
+		<section>
+			<section class="slide">
+				<h1>The evolution</h1>
+				<p class="presenter-notes">
+					[Quirijn] Skip this if there is no time
+				</p>
+			</section>
+		</section>
+		<!--Add in a Q/A-->
+		<section>
+			<header class="slide">
+				<h1>Questions or remarks?</h1>
+			</header>
+		</section>
+		<!--I think it would be nice to that every one-->
+		<section>
 			<header class="slide" title="The End">
 				<h1>Thank you!</h1>
 			</header>
-			<!--Also give credit to fotos and libaries we used-->
-			<!--<section>
-			<section class="slide">
-			<h1>We'd also like to thank:</h1>
-			<ul>
-			<li>Lea Verou - CSSS</li>
-			<li>And some more</li>
-			</ul>
-			</section>
-			</section>-->
-			<script src="slideshow.js"></script>
-			<script src="plugins/css-edit.js"></script>
-			<script src="plugins/css-snippets.js"></script>
-			<script src="plugins/css-controls.js"></script>
-			<script src="plugins/code-highlight.js"></script>
-			<script>
-				var slideshow = new SlideShow();
-				var snippets = document.querySelectorAll('.snippet');
-				for(var i = 0; i < snippets.length; i++) {
-					new CSSSnippet(snippets[i]);
-				}
-				var cssControls = document.querySelectorAll('.css-control');
-				for(var i = 0; i < cssControls.length; i++) {
-					new CSSControl(cssControls[i]);
-				}
-			</script>
+		</section>
+		<!--Also give credit to fotos and libaries we used-->
+		<!--<section>
+		<section class="slide">
+		<h1>We'd also like to thank:</h1>
+		<ul>
+		<li>Lea Verou - CSSS</li>
+		<li>And some more</li>
+		</ul>
+		</section>
+		</section>-->
+		<script src="slideshow.js"></script>
+		<script src="plugins/css-edit.js"></script>
+		<script src="plugins/css-snippets.js"></script>
+		<script src="plugins/css-controls.js"></script>
+		<script src="plugins/code-highlight.js"></script>
+		<script>
+			var slideshow = new SlideShow();
+			var snippets = document.querySelectorAll('.snippet');
+			for(var i = 0; i < snippets.length; i++) {
+				new CSSSnippet(snippets[i]);
+			}
+			var cssControls = document.querySelectorAll('.css-control');
+			for(var i = 0; i < cssControls.length; i++) {
+				new CSSControl(cssControls[i]);
+			}
+		</script>
 	</body>
 </html>
