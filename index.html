@@ -9,7 +9,7 @@
 		<link href="talk.css" rel="stylesheet" />
 		<script src="prefixfree.min.js"></script>
 	</head>
-	<body data-duration="30">
+	<body data-duration="20">
 		<header id="intro" class="slide">
 			<h1> Our internship </h1>
 			<p class="attribution">
@@ -34,10 +34,10 @@
 						The Project
 					</li>
 					<li>
-						The Front-end
+						The Back-end
 					</li>
 					<li>
-						The Back-end
+						The Front-end
 					</li>
 				</ul>
 				<p class="presenter-notes">
@@ -50,9 +50,9 @@
 			<header class="slide">
 				<h1>How we got here</h1>
 				<p class="presenter-notes">
-					[Matthias] Quirijn decided to explore the world a bit further and applied for an international placement. After a short selection procedure and an interview, he ended up going to Dublin to work at the Trinity Centre for High Performance Computing (TCHPC).
-					Matthias wanted to do something totally new, so he decided to do an international internship and after selection he was matched with Quirijn for an internship at TCHPC.
-
+					[Matthias] Quirijn  to explore the world /
+					Matthias something totally new /
+					Short selection process -> dublin /
 				</p>
 			</header>
 			<header class="slide">
@@ -63,27 +63,22 @@
 			</header>
 			<!--Now let's start about the project-->
 			<section>
-				<header class="slide">
-					<h1>The project</h1>
-					<p class="presenter-notes">
-						[Quirijn] The debriefing, what we started with etc
-					</p>
-				</header>
 				<section class="slide">
 					<h2>The project</h2>
-					<ul>
-						<li class="delayed">
+					<ul class="delayed">
+						<li>
 							A simple web application
 						</li>
-						<li class="delayed">
+						<li>
 							Preservation of historically valuable data
 						</li>
-						<li class="delayed">
-							Stored in a repository
+						<li>
+							Preserved in a Fedora Commons repository
 						</li>
 					</ul>
 					<p class="presenter-notes">
 						[Quirijn] General idea; A web application to import/export the data; Digitally preserve irish historical data; All the data store in repo
+						; Fedora: application to manage DO's
 					</p>
 				</section>
 				<section class="slide">
@@ -99,30 +94,27 @@
 					</p>
 				</header>
 				<section class="slide">
-					<h2>And so we started</h2>
-					<ul>
-						<li class="delayed">
+					<h2>And so we got started</h2>
+					<ul class="delayed">
+						<li>
 							A single Node.js application
 						</li>
-						<li class="delayed">
-							Fedora as storage
+						<li>
+							Fedora Commons as preservation storage
 						</li>
 					</ul>
 					<p class="presenter-notes">
-						[Quirijn] Used Fedora as backend;
+						[Quirijn] writing scalable Internet applications; Used Fedora as backend;
 					</p>
 				</section>
 				<section class="slide">
 					<h2>But then we realised</h2>
-					<ul>
-						<li class="delayed">
-							The code wasn't very maintainable
+					<ul class="delayed">
+						<li>
+							Our code wasn't very maintainable
 						</li>
-						<li class="delayed">
-							Using Fedora as storage wasn't sensible
-						</li>
-						<li class="delayed">
-							You couldn't easily develop 3rd party applications
+						<li>
+							You couldn't easily develop other front-ends
 						</li>
 					</ul>
 					<p class="presenter-notes">
@@ -136,16 +128,130 @@
 							Make a clear differentiation between the front- and back-end
 						</li>
 						<li class="delayed">
-							Create a developer friendly API
+							Create a consistent developer friendly API
 						</li>
 						<li class="delayed">
 							Create a front-end using said API
 						</li>
 						<li class="delayed">
-							Treat Fedora as a blackbox
+							Treat Fedora Commons as a blackbox
 						</li>
 						<li class="delayed">
 							Use MongoDB to store and deliver content for the API
+						</li>
+					</ul>
+					<p class="presenter-notes">
+						[Quirijn] Fedora purely as preservation; MongoDB explain document-oriented NoSQL database system.
+					</p>
+				</section>
+			</section>
+
+			<!--And a little about the back-end API-->
+			<section>
+				<header class="slide">
+					<h1>The Back-end</h1>
+					<p class="presenter-notes">
+						[Quirijn] Talk about what you did with the back-end
+					</p>
+				</header>
+				<section class="slide">
+					<h2>The initial idea</h2>
+					<ul>
+						<li class="delayed">
+							RESTful interface to Fedora-commons
+						</li>
+						<li class="delayed">
+							Cross domain issues
+						</li>
+						<li class="delayed">
+							PHP proxy
+						</li>
+						<li class="delayed">
+							Not such a good idea
+						</li>
+						<ul>
+							<li class="delayed">
+								Wasn't very restful
+							</li>
+							<li class="delayed">
+								Ugly
+							</li>
+						</ul>
+					</ul>
+					<!-- TODO Add some of the problems encountered -->
+					<p class="presenter-notes">
+						[Quirijn]
+						Using the rest api of Fedora; cross domain issues, php proxy
+					</p>
+				</section>
+				<header class="slide">
+					<h1>So we scrapped that.</h1>
+				</header>
+				<section class="slide">
+					<h2>API 2.0</h2>
+					<ul class="delayed">
+						<li>
+							Node.js application
+						</li>
+						<li>
+							MongoDB for storage
+						</li>
+						<li>
+							Javascript
+						</li>
+						<li>
+							Mocha
+						</li>
+					</ul>
+					<p class="presenter-notes">
+						[Quirijn] Started from scratch; Mocha, TDD
+					</p>
+				</section>
+				<section class="slide">
+					<h2>Structure</h2>
+					<ul>
+						<li class="delayed">
+							Multiple reusable npm packages
+						</li>
+						<ul class="delayed">
+							<li>
+								dri-api
+							</li>
+							<li>
+								node-dri
+							</li>
+							<li>
+								node-fedora
+							</li>
+							<li>
+								dris-workflows (front-end application)
+							</li>
+						</ul>
+					</ul>
+					<p class="presenter-notes">
+						[Quirijn]
+					</p>
+				</section>
+				<section class="slide">
+					<h2>Functions of the API</h2>
+					<ul>
+						<li>
+							Create
+						</li>
+						<li>
+							Read
+						</li>
+						<li>
+							Update
+						</li>
+						<li>
+							Delete
+						</li>
+						<li>
+							Expose reporting numbers
+						</li>
+						<li>
+							Communicating with Fedora Commons
 						</li>
 					</ul>
 					<p class="presenter-notes">
@@ -153,251 +259,186 @@
 					</p>
 				</section>
 			</section>
-			<!--Have a chat about the front end-->
 			<section>
-				<header class="slide">
-					<h1>The front-end</h1>
-				</header>
-				<section class="slide">
-					<h2>DRIS workflows</h2>
-					<ul>
-						<li class="delayed">
-							About
-						</li>
-					</ul>
-				</section>
-				<section class="slide">
-					<img src="img/project/hierarchy.png" />
-					<ul>
-						<li>
-							Collection: You could think of a collection as a labelled box; it’s filled with various items and groupings of items that are all ‘children’ ( series and Items)  of that box stored in the warehouse alongside many other boxes.
-						</li>
-						<li>
-							Series: This record would be another basic record presenting a basic overview of a grouping of items located in a box (collection).( few notebooks, a stack of photographs, some letters and/or objects such as a typewriter or pipe)
-						</li>
-						<li>
-							Item: item is anything with a distinct title (book, poster, photograph, manuscript, etc), which may or may not have multiple surrogates connected underneath it.
-						</li>
-					</ul>
-				</section>
-				<section class="slide">
-					<h2>DRIS workflows</h2>
-					<ul>
-						<li class="delayed">
-							About
-						</li>
-						<li class="delayed">
-							Reporting
-						</li>
-						<li class="delayed">
-							Creation
-						</li>
-						<li class="delayed">
-							Edit
-						</li>
-						<li class="delayed">
-							Administering
-						</li>
-					</ul>
-				</section>
-				<header class="slide">
-					<h1>Reporting</h1>
-				</header>
-				<section class="slide">
-					<img src="img/project/reporting.png" />
-				</section>
-				<header class="slide">
-					<h1>Creation</h1>
-				</header>
-				<section class="slide">
-					<img src="img/project/create-base.png" />
-				</section>
-				<section class="slide">
-					<img src="img/project/create-in-coll.png" />
-				</section>
-				<section class="slide">
-					<img src="img/project/create-item.png" />
-				</section>
-				<section class="slide">
-					<img src="img/project/create-successful.png" />
-				</section>
-				<section class="slide">
-					<img src="img/project/create-media.png" />
-				</section>
-				<header class="slide">
-					<h1>Edit</h1>
-				</header>
-				<section class="slide">
-					<img src="img/project/edit-base.png" />
-				</section>
-				<section class="slide">
-					<img src="img/project/edit-selection.png" />
-				</section>
-				<section class="slide">
-					<img src="img/project/edit-item.png" />
-				</section>
-				<section class="slide">
-					<img src="img/project/edit-item-2.png" />
-				</section>
-				<section class="slide">
-					<img src="img/project/edit-item-3.png" />
-				</section>
-				<section class="slide">
-					<img src="img/project/edit-item-4.png" />
-				</section>
-				<section class="slide">
-					<img src="img/project/edit-edit-mark.png" />
-				</section>
-				<section class="slide">
-					<img src="img/project/edit-parentId.png" />
-				</section>
-				<section class="slide">
-					<img src="img/project/edit-parentId-change.png" />
-				</section>
-				<section class="slide">
-					<img src="img/project/edit-upload.png" />
-				</section>
-				<section class="slide">
-					<img src="img/project/edit-upload-complete.png" />
-				</section>
-				<section class="slide">
-					<img src="img/project/edit-updated.png" />
-				</section>
-				<section class="slide">
-					<img src="img/project/edit-files-there.png" />
-				</section>
-				<header class="slide">
-					<h1>Query</h1>
-				</header>
-				<section class="slide">
-					<img src="img/project/query.png" />
-				</section>
-				<header class="slide">
-					<h1>Browse</h1>
-				</header>
-				<section class="slide">
-					<img src="img/project/browse.png" />
-				</section>
-				<header class="slide">
-					<h1>Administering</h1>
-				</header>
-				<section class="slide">
-					<img src="img/project/admin-base.png" />
-				</section>
-				<section class="slide">
-					<img src="img/project/admin-details.png" />
-				</section>
-				<section class="slide">
-					<img src="img/project/admin-approving.png" />
-				</section>
-				<section class="slide">
-					<img src="img/project/admin-unapprove.png" />
-				</section>
-			</section>
-		</section>
+				<!--Have a chat about the front end-->
+				<section>
+					<header class="slide">
+						<h1>The front-end</h1>
+					</header>
+					<section class="slide">
+						<h2>DRIS workflows</h2>
+						<ul>
+							<li>
+								About
+							</li>
+							<img src="img/project/hierarchy.png" />
+							<ul class="delayed">
+								<li>
+									Collection
+								</li>
+								<li >
+									Series
+								</li>
+								<li>
+									Item
+								</li>
+							</ul>
+						</ul>
+					</section>
+					<section class="slide">
+						<h2>DRIS workflows</h2>
+						<ul>
+							<li>
+								About
+							</li>
+							<li>
+								Reporting
+							</li>
+							<li>
+								Creation
+							</li>
+							<li>
+								Edit
+							</li>
+							<li>
+								Administering
+							</li>
+						</ul>
+					</section>
+					<section class="slide">
+						<h3>Reporting</h3>
+						<img src="img/project/reporting.png" />
+					</section>
+					<section class="slide">
+						<h3>Creation</h3>
+						<img src="img/project/create-base.png" />
+						<img src="img/project/breadcrumbs.png" />
+						<br>
+						<img src="img/project/pagination.png" />
+					</section>
+					<section class="slide">
+						<img src="img/project/create-in-coll.png" />
+					</section>
+					<section class="slide">
+						<img src="img/project/create-item.png" />
+					</section>
+					<section class="slide">
+						<img src="img/project/create-successful.png" />
+					</section>
+					<section class="slide">
+						<img src="img/project/create-media.png" />
+					</section>
 
-		<!--And a little about the back-end API-->
-		<section>
-			<header class="slide">
-				<h1>The Back-end</h1>
-				<p class="presenter-notes">
-					[Quirijn] Talk about what you did with the back-end
-				</p>
-			</header>
-			<section class="slide">
-				<h2>The initial idea</h2>
-				<ul>
-					<li class="delayed">
-						RESTful interface to Fedora-commons
-					</li>
-					<li class="delayed">
-						Cross domain issues
-					</li>
-					<li class="delayed">
-						PHP proxy
-					</li>
-					<li class="delayed">
-						Not such a good idea
-					</li>
-					<ul>
-						<li class="delayed">
-							Wasn't very restful
-						</li>
-						<li class="delayed">
-							Ugly
-						</li>
-					</ul>
-				</ul>
-				<!-- TODO Add some of the problems encountered -->
-				<p class="presenter-notes">
-					[Quirijn]
-					Using the rest api of Fedora; cross domain issues, php proxy
-				</p>
+					<section class="slide">
+						<h3>Edit</h3>
+						<img src="img/project/edit-base.png" />
+					</section>
+					<section class="slide">
+						<img src="img/project/edit-selection.png" />
+					</section>
+					<section class="slide">
+						<img src="img/project/edit-item.png" />
+					</section>
+					<section class="slide">
+						<img src="img/project/edit-item-2.png" />
+					</section>
+					<section class="slide">
+						<img src="img/project/edit-item-3.png" />
+					</section>
+					<section class="slide">
+						<img src="img/project/edit-item-4.png" />
+					</section>
+					<section class="slide">
+						<img src="img/project/edit-edit-mark.png" />
+					</section>
+					<section class="slide">
+						<img src="img/project/edit-parentId.png" />
+					</section>
+					<section class="slide">
+						<img src="img/project/edit-parentId-change.png" />
+					</section>
+					<section class="slide">
+						<img src="img/project/edit-upload.png" />
+					</section>
+					<section class="slide">
+						<img src="img/project/edit-upload-complete.png" />
+					</section>
+					<section class="slide">
+						<img src="img/project/edit-updated.png" />
+					</section>
+					<section class="slide">
+						<img src="img/project/edit-files-there.png" />
+					</section>
+					<header class="slide">
+						<h1>Query</h1>
+					</header>
+					<section class="slide">
+						<img src="img/project/query.png" />
+					</section>
+					<section class="slide">
+						<h3>Browse</h3>
+						<img src="img/project/browse.png" />
+					</section>
+					<section class="slide">
+						<h3>Administering</h3>
+						<img src="img/project/admin-base.png" />
+					</section>
+					<section class="slide">
+						<img src="img/project/admin-details.png" />
+					</section>
+					<section class="slide">
+						<img src="img/project/admin-approving.png" />
+					</section>
+					<section class="slide">
+						<img src="img/project/admin-unapprove.png" />
+					</section>
+					<section class="slide">
+						<img src="img/project/compare.png" />
+					</section>
+					<section class="slide">
+						<h3>Overview</h3>
+						<img src="img/project/overview.png" />
+					</section>
+
+				</section>
 			</section>
-			<header class="slide">
-				<h1>So we scrapped that.</h1>
-			</header>
+
 			<section class="slide">
-				<h2>API 2.0</h2>
+				<h2>Bugs</h2>
 				<ul>
-					<li class="delayed">
-						Node.js
+					<li>
+						No recursive CRUD
 					</li>
-					<li class="delayed">
-						MongoDB
+					<li>
+						Browser compatibility
 					</li>
-					<li class="delayed">
-						Javascript
+					<li>
+						No transactions
+					</li>
+					<li>
+						Loading bug
 					</li>
 				</ul>
-				<p class="presenter-notes">
-					[Quirijn] Started from scratch;
-				</p>
 			</section>
 			<section class="slide">
-				<h2>Structure</h2>
-				<ul>
-					<li class="delayed">
-						Multiple reusable npm packages
-					</li>
-					<ul class="delayed">
-						<li>
-							dri-api
-						</li>
-						<li>
-							node-dri
-						</li>
-						<li>
-							node-fedora
-						</li>
-					</ul>
-				</ul>
-				<p class="presenter-notes">
-					[Quirijn]
-				</p>
-			</section>
-			<section class="slide">
-				<h2>Functions</h2>
+				<h2>Possible features</h2>
 				<ul>
 					<li>
-						Store objects meta data
+						Command line applications
 					</li>
 					<li>
-						Store binary data
+						More exporting options for metadata
 					</li>
 					<li>
-						Expose all the information
+						Post processing
 					</li>
 					<li>
-						Expose reporting numbers
+						Apache SOLR
 					</li>
 					<li>
-						Pushing items to Fedora-Commons
+						Authentication &amp; authorisation
 					</li>
 				</ul>
-				<p class="presenter-notes">
-					[Quirijn]
-				</p>
 			</section>
 		</section>
 		<!--Might skip this-->
