@@ -50,8 +50,9 @@
 			<header class="slide">
 				<h1>How we got here</h1>
 				<p class="presenter-notes">
-					[Matthias] Quirijn decided to explore the world a bit further and applied for an international placement. After a short selection procedure and an interview, he ended up going to Dublin to work at the Trinity Centre for High Performance Computing (TCHPC).
-					Matthias wanted to do something totally new, so he decided to do an international internship and after selection he was matched with Quirijn for an internship at TCHPC.
+					[Matthias] Quirijn  to explore the world /
+					Matthias something totally new /
+					Short selection process -> dublin /
 
 				</p>
 			</header>
@@ -105,7 +106,7 @@
 							A single Node.js application
 						</li>
 						<li class="delayed">
-							Fedora as storage
+							Fedora Commons as storage
 						</li>
 					</ul>
 					<p class="presenter-notes">
@@ -119,7 +120,7 @@
 							The code wasn't very maintainable
 						</li>
 						<li class="delayed">
-							Using Fedora as storage wasn't sensible
+							Using Fedora Commons as storage wasn't sensible
 						</li>
 						<li class="delayed">
 							You couldn't easily develop 3rd party applications
@@ -142,7 +143,7 @@
 							Create a front-end using said API
 						</li>
 						<li class="delayed">
-							Treat Fedora as a blackbox
+							Treat Fedora Commons as a blackbox
 						</li>
 						<li class="delayed">
 							Use MongoDB to store and deliver content for the API
@@ -161,56 +162,52 @@
 				<section class="slide">
 					<h2>DRIS workflows</h2>
 					<ul>
-						<li class="delayed">
+						<li>
 							About
 						</li>
-					</ul>
-				</section>
-				<section class="slide">
 					<img src="img/project/hierarchy.png" />
 					<ul>
-						<li>
-							Collection: You could think of a collection as a labelled box; it’s filled with various items and groupings of items that are all ‘children’ ( series and Items)  of that box stored in the warehouse alongside many other boxes.
+						<li class="delayed">
+							Collection
 						</li>
-						<li>
-							Series: This record would be another basic record presenting a basic overview of a grouping of items located in a box (collection).( few notebooks, a stack of photographs, some letters and/or objects such as a typewriter or pipe)
+						<li class="delayed">
+							Series
 						</li>
-						<li>
-							Item: item is anything with a distinct title (book, poster, photograph, manuscript, etc), which may or may not have multiple surrogates connected underneath it.
+						<li class="delayed">
+							Item
 						</li>
+					</ul>
 					</ul>
 				</section>
 				<section class="slide">
 					<h2>DRIS workflows</h2>
 					<ul>
-						<li class="delayed">
+						<li>
 							About
 						</li>
-						<li class="delayed">
+						<li>
 							Reporting
 						</li>
-						<li class="delayed">
+						<li>
 							Creation
 						</li>
-						<li class="delayed">
+						<li>
 							Edit
 						</li>
-						<li class="delayed">
+						<li>
 							Administering
 						</li>
 					</ul>
 				</section>
-				<header class="slide">
-					<h1>Reporting</h1>
-				</header>
 				<section class="slide">
+					<h3>Reporting</h3>
 					<img src="img/project/reporting.png" />
 				</section>
-				<header class="slide">
-					<h1>Creation</h1>
-				</header>
 				<section class="slide">
+					<h3>Creation</h3>
 					<img src="img/project/create-base.png" />
+					<img src="img/project/breadcrumbs.png" /><br>
+					<img src="img/project/pagination.png" />
 				</section>
 				<section class="slide">
 					<img src="img/project/create-in-coll.png" />
@@ -224,10 +221,9 @@
 				<section class="slide">
 					<img src="img/project/create-media.png" />
 				</section>
-				<header class="slide">
-					<h1>Edit</h1>
-				</header>
+
 				<section class="slide">
+					<h3>Edit</h3>
 					<img src="img/project/edit-base.png" />
 				</section>
 				<section class="slide">
@@ -272,16 +268,12 @@
 				<section class="slide">
 					<img src="img/project/query.png" />
 				</section>
-				<header class="slide">
-					<h1>Browse</h1>
-				</header>
 				<section class="slide">
+					<h3>Browse</h3>
 					<img src="img/project/browse.png" />
 				</section>
-				<header class="slide">
-					<h1>Administering</h1>
-				</header>
 				<section class="slide">
+					<h3>Administering</h3>
 					<img src="img/project/admin-base.png" />
 				</section>
 				<section class="slide">
@@ -293,6 +285,14 @@
 				<section class="slide">
 					<img src="img/project/admin-unapprove.png" />
 				</section>
+				<section class="slide">
+					<img src="img/project/compare.png" />
+				</section>
+				<section class="slide">
+					<h3>Overview</h3>
+					<img src="img/project/overview.png" />
+				</section>
+				
 			</section>
 		</section>
 
@@ -377,7 +377,7 @@
 				</p>
 			</section>
 			<section class="slide">
-				<h2>Functions</h2>
+				<h2>Functions of the API</h2>
 				<ul>
 					<li>
 						Store objects meta data
@@ -398,6 +398,27 @@
 				<p class="presenter-notes">
 					[Quirijn]
 				</p>
+			</section>
+		</section>
+		<section>
+			<section class="slide">
+				<h2>Bugs</h2>
+				<ul>
+					<li>No recursive CRUD</li>
+					<li>Browser compatibility</li>
+					<li>No transactions</li>
+					<li>Loading bug</li>
+				</ul>
+			</section>
+			<section class="slide">
+				<h2>Possible features</h2>
+				<ul>
+					<li>Command line applications</li>
+					<li>More exporting options for metadata</li>
+					<li>Post processing</li>
+					<li>Apache SOLR</li>
+					<li>Authentication &amp; authorisation</li>
+				</ul>
 			</section>
 		</section>
 		<!--Might skip this-->
