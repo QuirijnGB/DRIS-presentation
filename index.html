@@ -37,7 +37,7 @@
 						Demo
 					</li>
 					<li>
-						The Project			
+						The Project
 					</li>
 					<li>
 						The Back-end
@@ -70,24 +70,39 @@
 					<h2>Context</h2>
 					<h3>For who and why?</h3>
 					<ul>
-						<li>Librarians in Trinity College</li>
-						<li>Preserve historical and valuable data</li>
-						<li>Doing everything manually:
+						<li>
+							Librarians in Trinity College
+						</li>
+						<li>
+							Preserve historical and valuable data
+						</li>
+						<li>
+							Doing everything manually:
 							<ul>
-								<li>file management</li>
-								<li>generation of metadata xml from a database</li>
-								<li>running scripts</li>
-							</ul></li>
+								<li>
+									file management
+								</li>
+								<li>
+									generation of metadata xml from a database
+								</li>
+								<li>
+									running scripts
+								</li>
+							</ul>
+						</li>
 					</ul>
-					<ul>
-					</ul>
+					<ul></ul>
 				</section>
 				<section class="slide">
 					<h2>Context</h2>
 					<img src="img/context/library-trinitycollege-dublin.jpeg" />
 					<ul>
-						<li>Preservation</li>
-						<li>Example: 9th century</li>
+						<li>
+							Preservation
+						</li>
+						<li>
+							Example: 9th century
+						</li>
 					</ul>
 				</section>
 				<section class="slide">
@@ -95,17 +110,27 @@
 					<h3>We want to preserve one book</h3>
 					<img src="img/context/Book_of_Kells.jpg" />
 					<ul>
-						<li>Book of Kells</li>
-						<li>Digitize</li>
+						<li>
+							Book of Kells
+						</li>
+						<li>
+							Digitize
+						</li>
 					</ul>
 				</section>
 				<section class="slide">
 					<h2>Context</h2>
 					<h3>A few terms</h3>
 					<ul>
-						<li>Collection (for example section of books)</li>
-						<li>Series (Books from the same author)</li>
-						<li>Item (Book itself or the pages of that book)</li>
+						<li>
+							Collection (for example section of books)
+						</li>
+						<li>
+							Series (Books from the same author)
+						</li>
+						<li>
+							Item (Book itself or the pages of that book)
+						</li>
 					</ul>
 					<img src="img/project/hierarchy.png">
 				</section>
@@ -117,37 +142,7 @@
 			</section>
 			<section>
 				<section class="slide">
-					<h2>The project</h2>
-					<ul class="delayed">
-						<li>
-							A simple web application
-						</li>
-						<li>
-							Preservation of historically valuable data
-						</li>
-						<li>
-							Preserved in a Fedora Commons repository
-						</li>
-					</ul>
-					<p class="presenter-notes">
-						[Quirijn] General idea; A web application to import/export the data; Digitally preserve irish historical data; All the data store in repo
-						; Fedora: application to manage DO's
-					</p>
-				</section>
-				<section class="slide">
-					<h2>What we had to start with</h2>
-					<p class="presenter-notes">
-						[Quirijn] *Awkward silence*
-					</p>
-				</section>
-				<header class="slide">
-					<h1 class="delayed">Nothing</h1>
-					<p class="presenter-notes">
-						[Quirijn] Nothing; Stared off from scratch with little idea on what it was really about; made lots of mistakes, shown later.
-					</p>
-				</header>
-				<section class="slide">
-					<h2>And so we got started</h2>
+					<h2>We started off with</h2>
 					<ul class="delayed">
 						<li>
 							A single Node.js application
@@ -202,7 +197,6 @@
 					<img src="img/project/Tech2.jpg" />
 				</section>
 			</section>
-
 			<!--And a little about the back-end API-->
 			<section>
 				<header class="slide">
@@ -215,7 +209,7 @@
 					<h2>The initial idea</h2>
 					<ul>
 						<li class="delayed">
-							RESTful interface to Fedora-commons
+							Interface to Fedora-commons
 						</li>
 						<li class="delayed">
 							Cross domain issues
@@ -226,10 +220,9 @@
 						<li class="delayed">
 							Not such a good idea
 						</li>
-
 						<ul>
 							<li class="delayed">
-								Wasn't very restful
+								Was a bit of a hack
 							</li>
 							<li class="delayed">
 								Ugly
@@ -245,26 +238,6 @@
 				<header class="slide">
 					<h1>So we scrapped that.</h1>
 				</header>
-				<section class="slide">
-					<h2>API 2.0</h2>
-					<ul class="delayed">
-						<li>
-							Node.js application
-						</li>
-						<li>
-							MongoDB for storage
-						</li>
-						<li>
-							Javascript
-						</li>
-						<li>
-							Mocha
-						</li>
-					</ul>
-					<p class="presenter-notes">
-						[Quirijn] Started from scratch; Mocha, TDD
-					</p>
-				</section>
 				<section class="slide">
 					<h2>Structure</h2>
 					<ul>
@@ -311,47 +284,6 @@
 						<li>
 							Communicating with Fedora Commons
 						</li>
-						<ul class="delayed">
-							<li>
-								dri-api
-							</li>
-							<li>
-								node-dri
-							</li>
-							<li>
-								node-fedora
-							</li>
-							<li>
-								dris-workflows (front-end application)
-							</li>
-						</ul>
-					</ul>
-					<p class="presenter-notes">
-						[Quirijn]
-					</p>
-				</section>
-
-				<section class="slide">
-					<h2>Functions of the API</h2>
-					<ul>
-						<li>
-							Create
-						</li>
-						<li>
-							Read
-						</li>
-						<li>
-							Update
-						</li>
-						<li>
-							Delete
-						</li>
-						<li>
-							Expose reporting numbers
-						</li>
-						<li>
-							Communicating with Fedora Commons
-						</li>
 					</ul>
 					<p class="presenter-notes">
 						[Quirijn]
@@ -359,21 +291,7 @@
 				</section>
 			</section>
 			<section class="slide">
-				<h2>Opportunities</h2>
-				<ul>
-					<li>
-						Recursive CRUD
-					</li>
-					<li>
-						Browser compatibility for older browsers
-					</li>
-					<li>
-						Transactions
-				</ul>
-
-			</section>
-			<section class="slide">
-				<h2>Opportunities</h2>
+				<h2>Challenges</h2>
 				<ul>
 					<li>
 						recursive CRUD
