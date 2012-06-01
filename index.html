@@ -185,7 +185,7 @@
 							Treat Fedora Commons as a blackbox
 						</li>
 						<li class="delayed">
-							Use MongoDB to store and deliver content for the API
+							Use a database to store and deliver content for the API
 						</li>
 					</ul>
 					<p class="presenter-notes">
@@ -219,15 +219,15 @@
 						</li>
 						<li class="delayed">
 							Not such a good idea
+							<ul>
+								<li>
+									Was a bit of a hack
+								</li>
+								<li>
+									Ugly
+								</li>
+							</ul>
 						</li>
-						<ul>
-							<li class="delayed">
-								Was a bit of a hack
-							</li>
-							<li class="delayed">
-								Ugly
-							</li>
-						</ul>
 					</ul>
 					<!-- TODO Add some of the problems encountered -->
 					<p class="presenter-notes">
@@ -247,12 +247,16 @@
 						<ul class="delayed">
 							<li>
 								dri-api
-							</li>
-							<li>
-								node-dri
-							</li>
-							<li>
-								node-fedora
+								<ul>
+									<li>
+										node-dri
+										<ul>
+											<li>
+												node-fedora
+											</li>
+										</ul>
+									</li>
+								</ul>
 							</li>
 							<li>
 								dris-workflows (front-end application)
@@ -290,6 +294,7 @@
 					</p>
 				</section>
 			</section>
+			<!---
 			<section class="slide">
 				<h2>Challenges</h2>
 				<ul>
@@ -304,6 +309,7 @@
 					</li>
 				</ul>
 			</section>
+			--->
 			<section class="slide">
 				<h2>Possible features</h2>
 				<ul>
@@ -315,6 +321,12 @@
 					</li>
 					<li>
 						Post processing
+						<ul>
+							<li>Surrogate creation</li>
+							<li>Watermarking</li>
+							<li>Video transcoding</li>
+							
+						</ul>
 					</li>
 					<li>
 						Apache SOLR
