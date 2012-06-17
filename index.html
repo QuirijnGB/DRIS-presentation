@@ -9,14 +9,14 @@
 		<link href="talk.css" rel="stylesheet" />
 		<script src="prefixfree.min.js"></script>
 	</head>
-	<body data-duration="20">
+	<body data-duration="30">
 		<header id="intro" class="slide">
 			<h1> Our internship </h1>
 			<p class="attribution">
 				By Quirijn Groot Bluemink &amp; Matthias van Wambeke
 			</p>
 			<p class="presenter-notes">
-				[Quirijn & Matthias] Introduce ourselves
+				[Quirijn &amp; Matthias] Introduce ourselves
 			</p>
 		</header>
 		<!--This is a little intro-->
@@ -261,6 +261,10 @@
 							<li>
 								dris-workflows (front-end application)
 							</li>
+							<li>
+								<img src="img/project/packages.png" alt="Smiley face" />
+							</li>
+
 						</ul>
 					</ul>
 					<p class="presenter-notes">
@@ -296,18 +300,18 @@
 			</section>
 			<!---
 			<section class="slide">
-				<h2>Challenges</h2>
-				<ul>
-					<li>
-						recursive CRUD
-					</li>
-					<li>
-						Browser compatibility for older browsers
-					</li>
-					<li>
-						Transactions
-					</li>
-				</ul>
+			<h2>Challenges</h2>
+			<ul>
+			<li>
+			recursive CRUD
+			</li>
+			<li>
+			Browser compatibility for older browsers
+			</li>
+			<li>
+			Transactions
+			</li>
+			</ul>
 			</section>
 			--->
 			<section class="slide">
@@ -322,10 +326,16 @@
 					<li>
 						Post processing
 						<ul>
-							<li>Surrogate creation</li>
-							<li>Watermarking</li>
-							<li>Video transcoding</li>
-							
+							<li>
+								Surrogate creation
+							</li>
+							<li>
+								Watermarking
+							</li>
+							<li>
+								Video transcoding
+							</li>
+
 						</ul>
 					</li>
 					<li>
@@ -380,11 +390,11 @@
 		<script>
 			var slideshow = new SlideShow();
 			var snippets = document.querySelectorAll('.snippet');
-			for(var i = 0; i < snippets.length; i++) {
+			for (var i = 0; i < snippets.length; i++) {
 				new CSSSnippet(snippets[i]);
 			}
 			var cssControls = document.querySelectorAll('.css-control');
-			for(var i = 0; i < cssControls.length; i++) {
+			for (var i = 0; i < cssControls.length; i++) {
 				new CSSControl(cssControls[i]);
 			}
 		</script>
