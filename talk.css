@@ -2,6 +2,9 @@
 	background: rgba(0,0,0,.7);
 	padding: 0;
 	border: 0;
+	background-image: url("img/longroom.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
 }
 
 #intro h1 {
@@ -10,6 +13,24 @@
 	text-align: center;
 }
 
+.context{
+	background-image: url("img/Long Room Hub_TCD.jpg");
+	background-repeat:no-repeat;
+	background-position: right;
+}
+
+.howGot{
+	background-image: url("img/trinityOutside.jpg");
+	background-repeat:no-repeat;
+	background-position: center;
+	
+}
+
+.end{
+	background-image: url("img/stpat.jpg");
+	background-repeat:no-repeat;
+	background-position: center;
+}
 #intro .attribution {
 	font-family: Helvetica, sans-serif;
 	font-weight: bold;
@@ -17,7 +38,7 @@
 	font-size: 100%;
 	color: rgba(0,0,0,.7);
 	text-shadow: none;
-	background: url(img/rainbow-wood.jpg) bottom;
+	color: #FFF;
 	padding:.6em 0 0;
 	overflow: hidden;
 }

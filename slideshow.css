@@ -281,3 +281,7 @@
 .presenter .slide:target > .presenter-notes {
 	display: block;
 }
+
+.subtitle{
+	font-size: 30%;
+}
